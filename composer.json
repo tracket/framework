@@ -1,5 +1,6 @@
 {
     "name": "tracket/framework",
+    "version": "dev-master",
     "description": "The Tracket Framework",
     "license": "MIT",
     "authors": [
@@ -8,7 +9,6 @@
             "email": "david.glassanos@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": "^8.1.0",
         "guzzlehttp/guzzle": "^7.2",
@@ -37,6 +37,6 @@
         }
     },
     "config": {
-        "sort-packages": true,
+        "sort-packages": true
     }
 }
