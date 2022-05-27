@@ -46,6 +46,7 @@
             "providers": [
                 "Tracket\\Admin\\AdminServiceProvider",
                 "Tracket\\Core\\CoreServiceProvider",
+                "Tracket\\Permissions\\PermissionsServiceProvider",
                 "Tracket\\Theme\\ThemeServiceProvider"
             ]
         }
