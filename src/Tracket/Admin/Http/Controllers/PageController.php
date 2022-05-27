@@ -2,10 +2,10 @@
 
 namespace Tracket\Admin\Http\Controllers;
 
+use App\Services\PageService;
 use Illuminate\Http\Request;
 use Tracket\Admin\Http\Requests\Pages\StorePageRequest;
 use Tracket\Admin\Http\Requests\Pages\UpdatePageRequest;
-use Tracket\Services\PageService;
 
 class PageController extends Controller
 {

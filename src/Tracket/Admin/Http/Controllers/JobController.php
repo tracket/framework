@@ -2,11 +2,11 @@
 
 namespace Tracket\Admin\Http\Controllers;
 
+use App\Services\CompanyService;
+use App\Services\JobService;
 use Illuminate\Http\Request;
 use Tracket\Admin\Http\Requests\Jobs\StoreJobRequest;
 use Tracket\Admin\Http\Requests\Jobs\UpdateJobRequest;
-use Tracket\Services\CompanyService;
-use Tracket\Services\JobService;
 
 class JobController extends Controller
 {
