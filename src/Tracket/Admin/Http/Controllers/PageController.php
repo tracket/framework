@@ -5,7 +5,7 @@ namespace Tracket\Admin\Http\Controllers;
 use Illuminate\Http\Request;
 use Tracket\Admin\Http\Requests\Pages\StorePageRequest;
 use Tracket\Admin\Http\Requests\Pages\UpdatePageRequest;
-use Tracket\Page\Services\PageService;
+use Tracket\Services\PageService;
 
 class PageController extends Controller
 {
