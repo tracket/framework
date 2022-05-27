@@ -3,9 +3,9 @@
 namespace Tracket\Admin\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Tracket\Company\Services\CompanyService;
 use Tracket\Admin\Http\Requests\Companies\StoreCompanyRequest;
-use Tracket\Admin\Http\Requests\Companies\UpdateSettingsRequest;
+use Tracket\Admin\Http\Requests\Companies\UpdateCompanyRequest;
+use Tracket\Services\CompanyService;
 
 class CompanyController extends Controller
 {
@@ -44,7 +44,7 @@ class CompanyController extends Controller
         return redirect(route('admin.companies.index'))->with('success-message', 'Company created successfully.');
     }
 
-    public function update(UpdateSettingsRequest $request, $externalId)
+    public function update(UpdateCompanyRequest $request, $externalId)
     {
         $this->companyService->update($externalId, $request->validated());
 

@@ -3,10 +3,10 @@
 namespace Tracket\Admin\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Tracket\Company\Services\CompanyService;
-use Tracket\Job\Services\JobService;
-use Tracket\Admin\Http\Requests\Jobs\UpdateJobRequest;
 use Tracket\Admin\Http\Requests\Jobs\StoreJobRequest;
+use Tracket\Admin\Http\Requests\Jobs\UpdateJobRequest;
+use Tracket\Services\CompanyService;
+use Tracket\Services\JobService;
 
 class JobController extends Controller
 {
