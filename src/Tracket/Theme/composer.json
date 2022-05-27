@@ -1,5 +1,5 @@
 {
-    "name": "tracket/admin",
+    "name": "tracket/theme",
     "version": "dev-master",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -10,14 +10,17 @@
         }
     ],
     "autoload": {
+        "files": [
+            "helpers.php"
+        ],
         "psr-4": {
-            "Tracket\\Admin\\": "app"
+            "Tracket\\Theme\\": "app"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Tracket\\Admin\\AdminServiceProvider"
+                "Tracket\\Theme\\ThemeServiceProvider"
             ]
         }
     }

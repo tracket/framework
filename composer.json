@@ -1,6 +1,5 @@
 {
     "name": "tracket/framework",
-    "version": "dev-master",
     "description": "The Tracket Framework",
     "license": "MIT",
     "authors": [
@@ -29,7 +28,10 @@
     "autoload": {
         "psr-4": {
             "Tracket\\": "src/Tracket/"
-        }
+        },
+        "files": [
+            "src/Tracket/Theme/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -38,5 +40,14 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tracket\\Admin\\AdminServiceProvider",
+                "Tracket\\Core\\CoreServiceProvider",
+                "Tracket\\Theme\\ThemeServiceProvider"
+            ]
+        }
     }
 }
