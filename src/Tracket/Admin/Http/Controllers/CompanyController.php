@@ -2,10 +2,10 @@
 
 namespace Tracket\Admin\Http\Controllers;
 
+use App\Services\CompanyService;
 use Illuminate\Http\Request;
 use Tracket\Admin\Http\Requests\Companies\StoreCompanyRequest;
 use Tracket\Admin\Http\Requests\Companies\UpdateCompanyRequest;
-use Tracket\Services\CompanyService;
 
 class CompanyController extends Controller
 {
