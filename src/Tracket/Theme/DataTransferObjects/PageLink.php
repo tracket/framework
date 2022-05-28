@@ -2,7 +2,7 @@
 
 namespace Tracket\Theme\DataTransferObjects;
 
-use Tracket\Page\Models\Page;
+use App\Models\Page;
 
 class PageLink
 {
