@@ -2,15 +2,10 @@
 
 namespace Tracket\Core\Repositories;
 
-use Hamcrest\Core\Set;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
-use Tracket\Company\Exceptions\CompanyNotFoundException;
-use Tracket\Company\Exceptions\JobNotFoundException;
-use Tracket\Company\Models\Company;
-use Tracket\Core\Exceptions\SettingNotFoundException;
+use Tracket\Core\Exceptions\ModelNotFoundException;
 use Tracket\Core\Models\Setting;
-use Tracket\Job\Models\Job;
 
 class SettingsRepository
 {
@@ -29,7 +24,7 @@ class SettingsRepository
         $setting = $this->query()->where('name', $name)->get()->first();
 
         if (!$setting) {
-            throw new SettingNotFoundException($name);
+            throw new ModelNotFoundException(Setting::class, 'name', $name);
         }
 
         return $setting;
