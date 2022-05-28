@@ -4,7 +4,7 @@ namespace Tracket\Permissions\Commands;
 
 use Illuminate\Console\Command;
 use Tracket\Permissions\Repositories\RoleRepository;
-use Tracket\User\Repositories\UserRepository;
+use App\Repositories\UserRepository;
 
 class RoleAssign extends Command
 {
