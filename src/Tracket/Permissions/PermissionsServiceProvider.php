@@ -24,6 +24,7 @@ class PermissionsServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__ . '/config/laratrust.php', 'laratrust');
         $this->mergeConfigFrom(__DIR__ . '/config/permissions.php', 'permissions');
     }
 }
